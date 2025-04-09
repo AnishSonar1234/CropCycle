@@ -1,0 +1,114 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 80 46% 97%;
+    --foreground: 140 7% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 7% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 7% 15%;
+
+    --primary: 140 26% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 43 39% 70%;
+    --secondary-foreground: 24 38% 12%;
+
+    --muted: 140 5% 90%;
+    --muted-foreground: 140 5% 45%;
+
+    --accent: 210 80% 64%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 140 10% 85%;
+    --input: 140 10% 85%;
+    --ring: 142 30% 40%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 80 46% 95%;
+    --sidebar-foreground: 140 7% 25%;
+    --sidebar-primary: 140 26% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 140 10% 90%;
+    --sidebar-accent-foreground: 140 7% 15%;
+    --sidebar-border: 140 10% 85%;
+    --sidebar-ring: 142 30% 40%;
+  }
+
+  .dark {
+    --background: 140 10% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 140 10% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 140 10% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 140 30% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 43 30% 40%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 140 10% 20%;
+    --muted-foreground: 140 5% 65%;
+
+    --accent: 210 70% 45%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 10% 20%;
+    --input: 140 10% 20%;
+    --ring: 142 30% 50%;
+
+    --sidebar-background: 140 15% 15%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 140 30% 45%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 140 10% 20%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 140 10% 25%;
+    --sidebar-ring: 142 30% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-md hover:-translate-y-1;
+  }
+  
+  .eco-badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-earth-green-light text-earth-green-dark;
+  }
+  
+  .progress-bar-container {
+    @apply w-full h-2 bg-muted rounded-full overflow-hidden;
+  }
+  
+  .progress-bar-fill {
+    @apply h-full rounded-full bg-earth-green-DEFAULT transition-all duration-500;
+  }
+}
