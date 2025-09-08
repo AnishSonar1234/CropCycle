@@ -41,7 +41,7 @@ This platform aims to reduce middlemen exploitation while helping buyers get rel
 For now, here’s a generic setup:  
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/CropCycle.git
+git clone https://github.com/AnishSonar1234/CropCycle.git
 
 # Navigate into the project
 cd CropCycle
